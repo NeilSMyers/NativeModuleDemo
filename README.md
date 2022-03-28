@@ -20,9 +20,8 @@ These instructions are a minimal step by step process. For context around the co
     ```
 5.  use in RN
     ```js
-    	import { NativeModules } from "react-native";
-
-    	console.log(NativeModules.*YourModule*)
+    import { NativeModules } from "react-native"
+    console.log(NativeModules.*YourModule*)
     ```
 
 ### android
@@ -44,5 +43,9 @@ These instructions are a minimal step by step process. For context around the co
    `packages.add(new *Your Package*());`
 
 6. use in RN
-   `js import { NativeModules } from "react-native"; console.log(NativeModules.*YourModule*) `
-   END
+   ```js 
+   import { NativeModules } from "react-native"
+   console.log(NativeModules.*YourModule*)
+   ```
+   
+END
