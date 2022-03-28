@@ -1,6 +1,6 @@
 # Write Native Modules with Swift and Kotlin
 
-These instructions are a minimal step by step process. For context around the code snippets, please refer to the [commit history](https://github.com/NeilSMyers/NativeModuleDemo/commits/main), the first commit is the start point and the second is the end point. The code will also contain comments for more info. To learn more about Native Modules you can read [React Docs](https://reactnative.dev/docs/native-modules-intro), [How to write Native Modules](https://around25.com/blog/how-to-write-native-modules-for-react-native/), or [Swift in React Native](https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-1-modules-9bb8d054db03).
+These instructions are a minimal step by step process. For context around the code snippets, please refer to the [commit history](https://github.com/NeilSMyers/NativeModuleDemo/commits/main), the first commit is the *start* point and the second is the *end* point. The code will also contain comments for more info. To learn more about Native Modules you can read [React Docs](https://reactnative.dev/docs/native-modules-intro), [How to write Native Modules](https://around25.com/blog/how-to-write-native-modules-for-react-native/), or [Swift in React Native](https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-1-modules-9bb8d054db03).
 
 ### ios
 
