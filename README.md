@@ -7,8 +7,7 @@ These instructions are a minimal step by step process. For context around the co
 1.  create swift class
 
 2.  create bridging header
-
-         `#import "React/RCTBridgeModule.h`
+    `#import "React/RCTBridgeModule.h`
 
 3.  write swift
 
