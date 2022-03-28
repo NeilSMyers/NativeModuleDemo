@@ -14,6 +14,8 @@
 		47B1E6329B6DE579DF7CF370 /* libPods-NativeModulesDemo-NativeModulesDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A72ECC680BEE79A67277DC91 /* libPods-NativeModulesDemo-NativeModulesDemoTests.a */; };
 		57BE80E153E5811B74834739 /* libPods-NativeModulesDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F2845EC0B7861334227B2 /* libPods-NativeModulesDemo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D2971BC027F2117E00303BCD /* PogChamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2971BBF27F2117E00303BCD /* PogChamp.swift */; };
+		D2971BC227F2133900303BCD /* PogChamp.m in Sources */ = {isa = PBXBuildFile; fileRef = D2971BC127F2133900303BCD /* PogChamp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		66D3F46BDFDF65B7B2D1F021 /* Pods-NativeModulesDemo-NativeModulesDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesDemo-NativeModulesDemoTests.release.xcconfig"; path = "Target Support Files/Pods-NativeModulesDemo-NativeModulesDemoTests/Pods-NativeModulesDemo-NativeModulesDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NativeModulesDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72ECC680BEE79A67277DC91 /* libPods-NativeModulesDemo-NativeModulesDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeModulesDemo-NativeModulesDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2971BBE27F2117E00303BCD /* NativeModulesDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeModulesDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2971BBF27F2117E00303BCD /* PogChamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogChamp.swift; sourceTree = "<group>"; };
+		D2971BC127F2133900303BCD /* PogChamp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PogChamp.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FBA984B6ECEB5D91E4504ED8 /* Pods-NativeModulesDemo-NativeModulesDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesDemo-NativeModulesDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-NativeModulesDemo-NativeModulesDemoTests/Pods-NativeModulesDemo-NativeModulesDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +97,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D2971BBF27F2117E00303BCD /* PogChamp.swift */,
+				D2971BBE27F2117E00303BCD /* NativeModulesDemo-Bridging-Header.h */,
+				D2971BC127F2133900303BCD /* PogChamp.m */,
 			);
 			name = NativeModulesDemo;
 			sourceTree = "<group>";
@@ -145,7 +153,6 @@
 				FBA984B6ECEB5D91E4504ED8 /* Pods-NativeModulesDemo-NativeModulesDemoTests.debug.xcconfig */,
 				66D3F46BDFDF65B7B2D1F021 /* Pods-NativeModulesDemo-NativeModulesDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +215,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -411,6 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2971BC227F2133900303BCD /* PogChamp.m in Sources */,
+				D2971BC027F2117E00303BCD /* PogChamp.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -431,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBA984B6ECEB5D91E4504ED8 /* Pods-NativeModulesDemo-NativeModulesDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66D3F46BDFDF65B7B2D1F021 /* Pods-NativeModulesDemo-NativeModulesDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeModulesDemoTests/Info.plist;
@@ -498,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModulesDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModulesDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModulesDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModulesDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
