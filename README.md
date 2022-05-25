@@ -13,7 +13,7 @@ These instructions are a minimal step by step process. For context around the co
 
 4.  create obj-c class
     ```
-    #import "React/RCTBridgeModule.h"
+    #import "React/RCTBridgeModule.h""
     @interface RCT_EXTERN_MODULE(*YOUR MODULE*, NSObject)
     @end
     ```
