@@ -10,11 +10,27 @@ These instructions are a minimal step by step process. For context around the co
     `#import "React/RCTBridgeModule.h"`
 
 3.  write swift
+    ```
+    import Foundation
+
+    @objc (*YOUR MODULE*)
+    class *YOUR MODULE*: NSObject {
+
+      @objc
+      func *YOUR FUNCTION*() {
+        print("We're on our way buddy ole pal")
+      }
+    }
+
+    ```
 
 4.  create obj-c class
     ```
     #import "React/RCTBridgeModule.h"
     @interface RCT_EXTERN_MODULE(*YOUR MODULE*, NSObject)
+    
+    RCT_EXTERN_METHOD(*YOUR FUNC*)
+    
     @end
     ```
 5.  use in RN
